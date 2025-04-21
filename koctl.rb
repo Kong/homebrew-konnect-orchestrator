@@ -10,7 +10,7 @@ class Koctl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.14.0/konnect-orchestrator_darwin_amd64.zip"
-      sha256 "7b0aaa6571e2f749b3e016dbdc1cdb395fbf9b58a2ed816b0c573a65ac5d0e8e"
+      sha256 "c78db02998cdae5ebddc3f644a0a6f1bf06d78b7e65c41084882236ba863c7d9"
 
       def install
         bin.install "koctl"
@@ -18,7 +18,7 @@ class Koctl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.14.0/konnect-orchestrator_darwin_arm64.zip"
-      sha256 "155c7b1bf2310f21d90d0a7a7d0e27e0f5c2edef446d087ea55b18c4b8f27e7e"
+      sha256 "838b5257ab6233c70baf12e5f56279338c16601c304addd4cee6ec9ade11402b"
 
       def install
         bin.install "koctl"
@@ -30,7 +30,7 @@ class Koctl < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.14.0/konnect-orchestrator_linux_amd64.zip"
-        sha256 "1063d551725ae0f288577d82d99d38d90cf593ad912a3760fafef7b2e5f8c720"
+        sha256 "4e13134559b48ad0ee4ad2bf33a99c933333d25f473e63b8086f7b9f695a90e6"
 
         def install
           bin.install "koctl"
@@ -40,7 +40,7 @@ class Koctl < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.14.0/konnect-orchestrator_linux_arm64.zip"
-        sha256 "73f0fe534db9360a2e85653e3f4e813f4656c73d2dc2ba9928b8c38cac420162"
+        sha256 "338164c20ba628ce84c99d12bed6acaa7d15d4c59a1d7d309b08e815ffc01ba9"
 
         def install
           bin.install "koctl"
