@@ -5,20 +5,20 @@
 class Koctl < Formula
   desc "Opinionated Kong Konnect organization orchestration via declarative configuration"
   homepage "https://github.com/Kong/konnect-orchestrator"
-  version "0.18.0"
+  version "0.19.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.18.0/konnect-orchestrator_darwin_amd64.zip"
-      sha256 "606722bcf3e0ab20c1f993ac6898869d54f0f3f89ea31f27357cfd6bab0a6997"
+      url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.19.0/konnect-orchestrator_darwin_amd64.zip"
+      sha256 "8044ebbe3cc15541a396bb5c9eb2387eca3f0aef7f8b0c81047ec77dd9f92431"
 
       def install
         bin.install "koctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.18.0/konnect-orchestrator_darwin_arm64.zip"
-      sha256 "11dd83b0c60d51a9739ef0f2b4a851f2686e11db5d0c1cc87b3cb31729430e07"
+      url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.19.0/konnect-orchestrator_darwin_arm64.zip"
+      sha256 "f49f800c58afdf9c221e8385d9d73104178a49e70e3036b8ff619d4dae66f03e"
 
       def install
         bin.install "koctl"
@@ -29,8 +29,8 @@ class Koctl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.18.0/konnect-orchestrator_linux_amd64.zip"
-        sha256 "c4618b50289fe1cc525166b77fca494b3981596832a1291c15d7846559f68ca6"
+        url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.19.0/konnect-orchestrator_linux_amd64.zip"
+        sha256 "357b2e094c4951a2242bd842edd97e4d44fe0580087e5fc9c049ad9af254a0a4"
 
         def install
           bin.install "koctl"
@@ -39,8 +39,8 @@ class Koctl < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.18.0/konnect-orchestrator_linux_arm64.zip"
-        sha256 "133d21f760e9d7d15811675c87682a70ac221003dfc69637ee32220342191c46"
+        url "https://github.com/Kong/konnect-orchestrator/releases/download/v0.19.0/konnect-orchestrator_linux_arm64.zip"
+        sha256 "28ef40ea547e45eaba71a87513ff9c7562bde92f3fd3bf5ba031cb9b75761a21"
 
         def install
           bin.install "koctl"
